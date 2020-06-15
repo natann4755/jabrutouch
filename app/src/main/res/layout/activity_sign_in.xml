@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jabrutouch_background"
+    tools:context=".ui.sign_in.SignInActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="640">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="108.06" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="31.3"
+            android:fontFamily="sans-serif"
+android:textStyle="bold"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/sign_in"
+            android:textColor="@color/sign_in_color"
+            android:textSize="28sp"
+            app:autoSizeTextType="uniform" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="98.17" />
+
+
+        <EditText
+            android:id="@+id/SIA_email_or_phone_ET"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="42dp"
+            android:layout_weight="43.71"
+            android:background="@drawable/rounded_edittext_top_shadow_padding"
+            android:fontFamily="sans-serif"
+android:textStyle="normal"
+            android:hint="@string/email_or_ph"
+            android:maxLines="1"
+            android:paddingStart="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:singleLine="true"
+            android:textColor="@color/sign_in_color"
+            android:textColorHint="@color/sign_in_color"
+            android:textSize="15sp"
+            tools:ignore="RtlSymmetry" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="24.7" />
+
+
+        <EditText
+            android:id="@+id/SIA_password_ET"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="42dp"
+            android:layout_weight="43.71"
+            android:background="@drawable/rounded_edittext_top_shadow_padding"
+            android:fontFamily="sans-serif"
+android:textStyle="normal"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingStart="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/sign_in_color"
+            android:textColorHint="@color/sign_in_color"
+            android:textSize="15sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50.7" />
+
+
+        <Button
+            android:id="@+id/SIA_sign_in_BTN"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="97dp"
+            android:layout_marginEnd="97dp"
+            android:layout_weight="43.71"
+            android:background="@drawable/button_rounded"
+            android:text="@string/sign_in"
+            android:textColor="@color/color_white"
+            android:textSize="15sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="85.49" />
+
+        <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="43"
+            android:background="@drawable/rounded_for_sign"
+            android:orientation="vertical"
+            android:layout_marginStart="41dp"
+            android:layout_marginEnd="41dp"
+            android:visibility="visible"
+            app:corner_radius="17dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+android:textStyle="normal"
+                    android:maxLines="1"
+                    android:text="@string/dont_have"
+                    android:textColor="@color/jabrutouch_blue"
+                    android:textSize="15sp"
+                    app:autoSizeTextType="uniform" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/SIA_sign_up_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="sans-serif"
+android:textStyle="bold"
+                    android:maxLines="1"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/jabrutouch_blue"
+                    android:textSize="15sp"
+                    app:autoSizeTextType="uniform" />
+
+
+            </LinearLayout>
+
+        </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10.03" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/SIA_forgot_pass_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="31.88"
+            android:fontFamily="sans-serif"
+android:textStyle="normal"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/forgot_pass"
+            android:textColor="@color/jabrutouch_blue"
+            android:textSize="15sp"
+            app:autoSizeTextType="uniform"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25.51" />
+
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/SIA_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/jabrutouch_blue"
+        android:maxWidth="50dp"
+        android:maxHeight="50dp"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:visibility="gone"
+
+        />
+
+
+</RelativeLayout>

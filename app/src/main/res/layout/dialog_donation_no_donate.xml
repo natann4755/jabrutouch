@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="333dp"
+    android:layout_height="389dp"
+    android:layout_gravity="center"
+    android:background="@drawable/rounded_corner_dialog"
+    android:orientation="vertical"
+    android:weightSum="389">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="49.57" />
+
+
+    <ImageView
+        android:id="@+id/PA_user_image_CIV"
+        android:layout_width="105.48dp"
+        android:layout_height="65.74dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/broken_keter" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30.78" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/DD_name"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="38.69"
+        android:fontFamily="sans-serif"
+        android:maxLines="1"
+        android:textColor="@color/sign_in_color"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        android:text="@string/el_banco" />
+
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/DD_memorial_name_ACTV"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="57.58"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="1"
+        android:text="@string/esta_vacio"
+        android:textColor="@color/orange_btn"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        app:autoSizeTextType="uniform" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="26.09" />
+
+
+
+    <Button
+        android:id="@+id/DDND_donate_BTN"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="16.55dp"
+        android:layout_marginEnd="16.55dp"
+        android:layout_weight="62.52"
+        android:background="@drawable/button_rounded_radius_14"
+        android:fontFamily="sans-serif"
+        android:text="@string/Regala_ketarim"
+        android:textColor="@color/color_white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12.17" />
+
+
+    <Button
+        android:id="@+id/DDND_skip_BTN"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:textAllCaps="false"
+        android:layout_marginStart="16.55dp"
+        android:layout_marginEnd="16.55dp"
+        android:layout_weight="62.52"
+        android:background="@drawable/rounded_for_no_donate"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/Empieza_la"
+        android:textColor="@color/bottom_nevi_blue"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15.01" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="640"
+    android:id="@+id/DA_all_view_LL"
+    android:background="@color/jabrutouch_background"
+    tools:context=".ui.main.donation_screen.DonationActivity">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"/>
+
+    <RelativeLayout
+        android:id="@+id/DA_top_bar_RL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="35">
+
+        <RelativeLayout
+            android:id="@+id/DA_arrow_back_RL"
+            android:layout_width="57dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_blue_arrow"/>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/DA_title_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Tzedaka"
+            android:textColor="@color/profile_color"
+            android:fontFamily="sans-serif"
+android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"/>
+
+
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/DA_content_frame_FL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="595" />
+
+</LinearLayout>

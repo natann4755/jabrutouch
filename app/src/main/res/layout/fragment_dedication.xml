@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="595"
+    android:background="@color/jabrutouch_background"
+    android:orientation="vertical"
+    tools:context=".ui.main.donation_screen.DedicationFragment">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11.05"/>
+
+
+    <TextView
+        android:id="@+id/FD_top_view_TV"
+        app:autoSizeTextType="uniform"
+        android:maxLines="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="45"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:textColor="@color/profile_color"
+        android:gravity="center"
+        android:text="@string/here_come"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+android:textStyle="normal"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.34"/>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/DF_view_pager_VP"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="360"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="26.87"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        >
+
+
+        <com.viewpagerindicator.LinePageIndicator
+            android:id="@+id/activity_view_pager_indicator_underline"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            app:lineWidth="39dp"
+            app:strokeWidth="2.7dp"
+            app:selectedColor="@color/jabrutouch_blue"
+
+            />
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="71.51"/>
+
+
+
+    <Button
+        android:id="@+id/DEDF_continue_btn_BTN"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="56"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="29dp"
+        android:text="@string/continu"
+        android:layout_marginStart="29dp"
+        android:background="@drawable/blue_button_rounded"
+        android:fontFamily="sans-serif"
+android:textStyle="bold"
+        android:textColor="@color/color_white"
+        android:textSize="19sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14.96"/>
+
+
+
+</LinearLayout>

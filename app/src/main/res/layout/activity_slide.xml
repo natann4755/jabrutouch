@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.slide_screens.SlideActivity">
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/SA_viewPager_VP"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <com.viewpagerindicator.LinePageIndicator
+            android:id="@+id/activity_view_pager_indicator_underline"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            app:lineWidth="39dp"
+            app:strokeWidth="2.7dp"
+            app:selectedColor="@color/jabrutouch_blue"
+
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

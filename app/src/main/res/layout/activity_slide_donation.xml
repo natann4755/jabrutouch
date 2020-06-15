@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="640"
+    tools:context=".ui.slide_screens.SlideActivity">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"/>
+
+    <RelativeLayout
+        android:id="@+id/SDA_arrow_back_RL"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:layout_weight="46.13">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_blue_arrow"/>
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="580">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/SDA_viewPager_VP"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+
+            >
+
+
+            <com.viewpagerindicator.LinePageIndicator
+                android:id="@+id/SDA_activity_view_pager_indicator_underline"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                app:lineWidth="39dp"
+                app:strokeWidth="2.7dp"
+                app:selectedColor="@color/jabrutouch_blue"
+
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

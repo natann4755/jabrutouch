@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="600"
+    android:background="@color/jabrutouch_background"
+    tools:context=".ui.main.donation_screen.PaymentSuccesFragment">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="58.05" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="152">
+
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                >
+
+
+                <ImageView
+                    android:id="@+id/PSF_payment_result_IV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/payment_result" />
+
+
+                <RelativeLayout
+                    android:layout_width="77dp"
+                    android:layout_height="77dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/circle_white">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lav_thumbUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:lottie_autoPlay="false"
+                        app:lottie_fileName="payment_checkmark.json"
+                        app:lottie_loop="false"
+                        app:lottie_speed="1.25" />
+
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="34.84" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif"
+android:textStyle="normal"
+        android:gravity="center"
+        android:text="@string/Payment_done"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="34.84" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif"
+android:textStyle="normal"
+        android:gravity="center"
+        android:text="@string/we_want"
+        android:textSize="14sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="177.62" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif"
+android:textStyle="normal"
+        android:gravity="center"
+        android:text="@string/a_receipt_was"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18.69" />
+
+
+    <Button
+        android:id="@+id/PSF_done_btn_BTN"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_weight="56"
+        android:background="@drawable/blue_button_rounded"
+        android:fontFamily="sans-serif"
+android:textStyle="bold"
+        android:text="@string/done"
+        android:textColor="@color/color_white"
+        android:textSize="19sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14.96" />
+
+
+</LinearLayout>

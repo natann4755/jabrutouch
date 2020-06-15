@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".ui.main.audio_screen.AudioActivity">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="top|center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/AA_arrow_back_IV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_blue_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/AA_download_btn_IV"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_download_audio"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:layout_weight="1">
+
+
+                <ImageView
+                    android:id="@+id/AA_image_btn_IV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_image_audio"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:layout_weight="1">
+
+
+                <ImageView
+                    android:id="@+id/AA_message_btn_IV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_ask_new" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="14">
+
+        <com.github.barteksc.pdfviewer.PDFView
+            android:id="@+id/AA_pdfView_PDFV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="67dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_shadow"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <ImageView
+                    android:id="@+id/AA_speed_IV"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_jabru_speed_selector" />
+
+
+                <ImageView
+                    android:id="@+id/AA_back30_IV"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_jabru_back10_selector" />
+
+
+                <ImageView
+                    android:id="@+id/AA_pause_IV"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_play_selector" />
+
+
+                <ImageView
+                    android:id="@+id/AA_forward10_IV"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_jabru_10_selector" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/AA_time_start_TV"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="24:23"
+                    />
+
+
+                <TextView
+                    android:id="@+id/AA_time_past_TV"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="24:23"
+                    />
+
+
+            </RelativeLayout>
+
+
+            <co.il.jabrutouch.ui.main.video_screen.DottedSeekBar
+                android:id="@+id/AA_seekbar_SB"
+                android:layout_marginStart="50dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginEnd="25dp"
+                android:maxHeight="5dp"
+                android:progressDrawable="@drawable/custom_seekbar_bar_for_record"
+                android:thumb="@drawable/custom_thumb" />
+
+<!--            <SeekBar-->
+<!--                android:layout_marginStart="50dp"-->
+<!--                android:id="@+id/AA_seekbar_SB"-->
+<!--                android:layout_marginEnd="25dp"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:maxHeight="5dp"-->
+<!--                android:thumb="@drawable/custom_thumb"-->
+<!--                android:progressDrawable="@drawable/custom_seekbar_bar"-->
+<!--                android:layout_weight="1"/>-->
+
+
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:id="@+id/AA_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/jabrutouch_blue"
+            android:maxWidth="50dp"
+            android:maxHeight="50dp"
+            android:minWidth="50dp"
+            android:minHeight="50dp"
+            android:visibility="gone"
+
+            />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

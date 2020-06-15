@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="600"
+    android:background="@color/jabrutouch_background"
+    tools:context=".ui.main.donation_screen.CreditCardDetailsFragment">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25.9" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="22.99dp"
+        android:layout_marginEnd="13.57dp"
+        android:layout_weight="53.67">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:fontFamily="sans-serif"
+android:textStyle="normal"
+            android:text="@string/you_signed"
+            android:textColor="@color/bottom_nevi_blue"
+            android:textSize="21sp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dolar_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    tools:text="36"
+                    android:layout_marginTop="-15dp"
+                    android:fontFamily="sans-serif"
+android:textStyle="normal"
+                    android:text="36"
+                    android:textColor="@color/bottom_nevi_blue"
+                    android:textSize="44sp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:fontFamily="sans-serif"
+android:textStyle="normal"
+                android:text="@string/per"
+                android:textColor="@color/bottom_nevi_blue"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="19.85" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_weight="345"
+        android:background="@drawable/rounded_shadow"
+        android:orientation="vertical"
+        android:weightSum="345">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="16.65" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="82">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="21.81dp"
+                android:orientation="vertical"
+                android:weightSum="82">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4.97" />
+
+                <TextView
+                    android:id="@+id/CCDF_card_name_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+android:textStyle="normal"
+                    android:text="@string/cardholder"
+                    android:textColor="@color/bottom_nevi_blue"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="8.97" />
+
+
+                <RelativeLayout
+                    android:id="@+id/CCDF_card_name_RL"
+                    android:layout_width="210dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="62.3"
+                    android:background="@drawable/rounded_edittext_top_shadow"
+                    android:paddingTop="6dp">
+
+                    <EditText
+                        android:id="@+id/CCDF_card_name_edit_text_ET"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:inputType="text"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="5dp"
+                        android:textColor="@color/bottom_nevi_blue"
+                        android:textSize="17sp"
+                        android:hint="@string/Name_Surname" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="97dp"
+                android:layout_height="56dp"
+                android:layout_alignParentEnd="true">
+
+                <ImageView
+                    android:id="@+id/FCCD_credit_compeny_IV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="16.65" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="21.81dp"
+            android:layout_marginEnd="22.17dp"
+            android:layout_weight="83"
+            android:orientation="vertical"
+            android:weightSum="82">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4.97" />
+
+            <TextView
+                android:id="@+id/CCDF_card_number_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+android:textStyle="normal"
+                android:text="@string/Card_Number"
+                android:textColor="@color/bottom_nevi_blue"
+                android:textSize="14sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8.97" />
+
+
+            <RelativeLayout
+                android:id="@+id/CCDF_card_number_RL"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="62.3"
+                android:background="@drawable/rounded_edittext_top_shadow"
+                android:paddingTop="6dp">
+
+                <EditText
+                    android:id="@+id/CCDF_card_number_edit_text_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:inputType="number"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/bottom_nevi_blue"
+                    android:textSize="17sp"
+                    android:hint="0000 0000 0000 0000" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="16.65" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="21.81dp"
+            android:layout_marginEnd="22.17dp"
+            android:layout_weight="82"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/CCDF_card_expiry_first_and_last_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+android:textStyle="normal"
+                    android:text="@string/Expiry"
+                    android:textColor="@color/bottom_nevi_blue"
+                    android:textSize="14sp" />
+
+
+                <LinearLayout
+                    android:layout_width="152dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/CCDF_card_expiry_first_RL"
+                        android:layout_width="75.72dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_edittext_top_shadow_left_side"
+                        android:paddingTop="6dp">
+
+                        <EditText
+                            android:id="@+id/CCDF_card_expiry_first_edit_text_ET"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="5dp"
+                            android:textColor="@color/bottom_nevi_blue"
+                            android:textSize="17sp"
+                            android:hint="MM" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/CCDF_card_expiry_last_RL"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="4dp"
+                        android:background="@drawable/rounded_edittext_top_shadow_righte_side"
+                        android:paddingTop="6dp">
+
+                        <EditText
+                            android:id="@+id/CCDF_card_expiry_last_edit_text_ET"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="5dp"
+                            android:textColor="@color/bottom_nevi_blue"
+                            android:textSize="17sp"
+                            android:hint="YY"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="21dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4.97" />
+
+                <TextView
+                    android:id="@+id/CCDF_card_cvv_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+android:textStyle="normal"
+                    android:text="@string/cvv"
+                    android:textColor="@color/bottom_nevi_blue"
+                    android:textSize="14sp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4.97" />
+
+
+                <RelativeLayout
+                    android:id="@+id/CCDF_card_cvv_RL"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="53.3"
+                    android:background="@drawable/rounded_edittext_top_shadow"
+                    android:paddingTop="6dp">
+
+                    <EditText
+                        android:id="@+id/CCDF_card_cvv_edit_text_ET"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="5dp"
+                        android:textColor="@color/bottom_nevi_blue"
+                        android:textSize="17sp"
+                        android:hint="000" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16" />
+
+
+    <LinearLayout
+        android:id="@+id/DEDF_anunimous_LL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="33.52"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:id="@+id/DEDF_anonimous_CB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/ellipse_icon" />
+
+
+        <TextView
+            android:id="@+id/DEDF_anonimous_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:fontFamily="sans-serif"
+android:textStyle="normal"
+            android:text="@string/save_for"
+            android:textColor="@color/check_box_color"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30.18" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/CCDF_send_payment_btn_RL"
+        android:layout_width="match_parent"
+        android:layout_weight="56"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        android:background="@drawable/send_shadow"
+        android:layout_height="0dp">
+
+
+        <Button
+            android:id="@+id/CCDF_send_payment_btn_BTN"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif"
+android:textStyle="bold"
+            android:text="@string/send_payment"
+            android:background="@drawable/flag_transparent"
+            android:textColor="@color/color_white"
+            android:textSize="19sp" />
+
+
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14.96" />
+
+
+</LinearLayout>

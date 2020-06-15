@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jabrutouch_background"
+    android:orientation="vertical"
+    tools:context=".ui.main.mishna_screen.MishnaMainFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="14dp">
+
+
+            <TextView
+                android:id="@+id/MMF_title_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif"
+android:textStyle="bold"
+                android:text="@string/mishna"
+                android:textColor="@color/sign_in_color"
+                android:textSize="25sp"
+                app:autoSizeTextType="uniform" />
+
+
+            <SearchView
+                android:visibility="gone"
+                android:id="@+id/MMF_search_SV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layoutDirection="rtl"
+                android:focusable="true" />
+
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/MMF_linearZeraim_LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="14dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="sans-serif"
+android:textStyle="bold"
+                    android:text="@string/seder_zeraim"
+                    android:textColor="@color/sign_in_color"
+                    android:textSize="25sp"
+                    app:autoSizeTextType="uniform" />
+
+
+                <ImageView
+                    android:id="@+id/MMF_zeraim_arrow_IV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/arrow_new_black" />
+
+
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/MMF_zeraim_recycler_RV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="13dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/MMF_linearMoed_LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="14dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="sans-serif"
+android:textStyle="bold"
+                    android:text="@string/seder_moed"
+                    android:textColor="@color/sign_in_color"
+                    android:textSize="25sp"
+                    app:autoSizeTextType="uniform" />
+
+
+                <ImageView
+                    android:id="@+id/MMF_moed_arrow_IV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/arrow_new_black" />
+
+
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/MMF_moed_recycler_RV"
+                android:layout_width="match_parent"
+                android:layout_marginStart="9dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/MMF_linearNoshim_LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="14dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="sans-serif"
+android:textStyle="bold"
+                    android:text="@string/seder_noshim"
+                    android:textColor="@color/sign_in_color"
+                    android:textSize="25sp"
+                    app:autoSizeTextType="uniform" />
+
+
+                <ImageView
+                    android:id="@+id/MMF_noshim_arrow_IV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/arrow_new_black" />
+
+
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/MMF_noshim_recycler_RV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="13dp">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/MMF_linearNezikin_LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="14dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="sans-serif"
+android:textStyle="bold"
+                    android:text="@string/seder_nezikin"
+                    android:textColor="@color/sign_in_color"
+                    android:textSize="25sp"
+                    app:autoSizeTextType="uniform" />
+
+
+                <ImageView
+                    android:id="@+id/MMF_nezikin_arrow_IV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/arrow_new_black" />
+
+
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/MMF_nezikin_recycler_RV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="13dp">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/MMF_linearKodshim_LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="14dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="sans-serif"
+android:textStyle="bold"
+                    android:text="@string/seder_kodshim"
+                    android:textColor="@color/sign_in_color"
+                    android:textSize="25sp"
+                    app:autoSizeTextType="uniform" />
+
+
+                <ImageView
+                    android:id="@+id/MMF_kodshim_arrow_IV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/arrow_new_black" />
+
+
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/MMF_kodshim_recycler_RV"
+                android:layout_width="match_parent"
+                android:layout_marginStart="9dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/MMF_linearTaharot_LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="14dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="sans-serif"
+android:textStyle="bold"
+                    android:text="@string/seder_taharot"
+                    android:textColor="@color/sign_in_color"
+                    android:textSize="25sp"
+                    app:autoSizeTextType="uniform" />
+
+
+                <ImageView
+                    android:id="@+id/MMF_taharot_arrow_IV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/arrow_new_black" />
+
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/MMF_taharot_recycler_RV"
+                android:layout_width="match_parent"
+                android:layout_marginStart="9dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

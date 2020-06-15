@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="13dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_height="wrap_content"
+        >
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            app:autoSizeTextType="uniform"
+            android:maxLines="1"
+            android:id="@+id/DI_masechet_name_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:fontFamily="sans-serif"
+android:textStyle="bold"
+            android:textColor="@color/sign_in_color"
+            android:textSize="25sp"
+            />
+
+
+        <ImageView
+            android:id="@+id/DI_arrow_IV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginTop="5dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow_new_black" />
+
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ID_download_pages_recycler_RV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp" />
+
+
+</LinearLayout>

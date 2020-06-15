@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="jabrutouch_blue">#5A57DF</color>
+    <color name="thumc_color">#F9F9FB</color>
+    <color name="jabrutouch_welcome">#15176C</color>
+    <color name="jabrutouch_lorem">#45446B</color>
+    <color name="grayIndicator">#B9BACA</color>
+    <color name="grayIndicatorInactive">#80B9BACA</color>
+    <color name="grayIndicator2">#C4C4C4</color>
+    <color name="gray_line">#54D4DCE7</color>
+    <color name="shadow">#19ABADAF</color>
+    <color name="orange_btn">#FF5F50</color>
+    <color name="green_btn">#25D366</color>
+    <color name="sign_in_color">#E02C2B56</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_default">#FAFAFA</color>
+    <color name="jabrutouch_background">#F9F9FB</color>
+    <color name="bottom_nevi_blue">#2D2BA9</color>
+    <color name="rounded_linear_color">#FEFEFE</color>
+    <color name="rounded_linear_back_color">#51508A</color>
+    <color name="tab_color">#4A4490</color>
+    <color name="audio_bachground">#E5E5E5</color>
+    <color name="video_background">#7E000000</color>
+    <color name="profile_color">#E02C2B56</color>
+    <color name="thumb_color">#E9E7E7</color>
+    <color name="gray_seekbar_color">#262C2B56</color>
+    <color name="user_message">#5D98E8</color>
+    <color name="message_color">#686868</color>
+    <color name="gray_shadow">#032D2BA9</color>
+    <color name="message_date">#828282</color>
+    <color name="unread_background">#80E5E5E5</color>
+    <color name="color_no_clasees">#CC51508A</color>
+    <color name="slide_color">#9A9A9A</color>
+    <color name="color_blue_gray">#7A2D2BA9</color>
+    <color name="check_box_color">#6E000000</color>
+    <color name="credit_shadow">#65646464</color>
+    <color name="ticker_number">#2C2B56</color>
+    <color name="rounded_linear_color_buttom">#9CFFFFFF</color>
+    <color name="rounded_linear_color_buttom2">#179291B3</color>
+    <color name="donate_line">#8C7E7DC8</color>
+    <color name="orange_btn_lite">#4DFF5F50</color>
+    <color name="round_donate_gray">#F2F2F5</color>
+    <color name="round_donate_video">#EDEDED</color>
+    <color name="round_donate_video_background">#A6262859</color>
+
+</resources>

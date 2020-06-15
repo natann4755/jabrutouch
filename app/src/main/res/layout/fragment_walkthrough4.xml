@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/jabrutouch_background"
+    tools:context=".ui.slide_screens.SlideFragments.Walkthrough1Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="640"
+        >
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="58.26"
+            android:textSize="25sp"
+            app:autoSizeTextType="uniform"
+            android:maxLines="2"
+            android:text="@string/ask"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textColor="@color/bottom_nevi_blue"
+
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="68.37"/>
+
+
+        <ImageView
+            android:id="@+id/WT4Fragment_image_IV"
+            android:layout_width="269.77dp"
+            android:layout_height="0dp"
+            android:layout_weight="253.72"
+            android:background="@drawable/ic_ask_the_rabbi"
+
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="91.16"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_weight="73.43"
+            app:autoSizeTextType="uniform"
+            android:maxLines="2"
+            android:fontFamily="sans-serif"
+android:textStyle="normal"
+            android:text="@string/si_te"
+            android:textSize="19sp"
+            android:gravity="center"
+            android:textColor="@color/jabrutouch_lorem"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="35.06"/>
+
+    </LinearLayout>
+
+</FrameLayout>

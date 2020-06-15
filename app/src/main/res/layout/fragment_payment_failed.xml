@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="600"
+    android:background="@color/jabrutouch_background"
+    tools:context=".ui.main.donation_screen.PaymentSuccesFragment">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="58.05" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="152">
+
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            >
+
+
+            <ImageView
+                android:id="@+id/PSF_payment_result_IV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/payment_result" />
+
+
+            <RelativeLayout
+                android:layout_width="77dp"
+                android:layout_height="77dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/circle_white">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/x_payment_icon"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="34.84" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif"
+android:textStyle="normal"
+        android:gravity="center"
+        android:text="@string/Transaction_failed"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="16sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="34.84" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif"
+android:textStyle="normal"
+        android:gravity="center"
+        android:text="@string/Please_try"
+        android:textSize="14sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="149.62" />
+
+
+    <TextView
+        android:id="@+id/PFF_try_again_Btn_TV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_weight="53"
+        android:background="@drawable/rounded_for_sign"
+        android:fontFamily="sans-serif"
+android:textStyle="normal"
+        android:gravity="center"
+        android:text="@string/Try_again"
+        android:textColor="@color/bottom_nevi_blue"
+        android:textSize="16sp" />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14.96" />
+
+
+
+    <TextView
+        android:id="@+id/PFF_contect_us_Btn_TV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_weight="53"
+        android:background="@drawable/rounded_for_sign"
+        android:fontFamily="sans-serif"
+android:textStyle="normal"
+        android:gravity="center"
+        android:text="@string/prublem"
+        android:textColor="@color/bottom_nevi_blue"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

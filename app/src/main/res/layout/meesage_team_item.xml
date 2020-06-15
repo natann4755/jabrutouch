@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="20dp"
+    android:background="@color/jabrutouch_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="19dp"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="bottom"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="7dp"
+            >
+
+            <ImageView
+                android:id="@+id/MTI_team_imageIV"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="6dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/team_icon_new">
+
+            </ImageView>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:gravity="start">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/rounded_shadow_team"
+                >
+
+
+                <TextView
+                    android:id="@+id/MUI_message_TV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="13sp"
+                    android:autoLink="web"
+                    android:textColorLink="@color/bottom_nevi_blue"
+                    android:paddingStart="7dp"
+                    android:text="hi, whats up\n asdasd\nasd"
+                    android:textColor="@color/profile_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3.7dp"
+                    android:background="@drawable/ic_pointer_white"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/MUI_message_time_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:textSize="12sp"
+        android:layout_marginStart="70dp"
+        tools:text="Read 16:26" />
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/jabrutouch_background"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".ui.main.profile_screen.ProfileInterestsFragment"
+    >
+
+
+    <ImageView
+        android:id="@+id/FPI_back_arrow_IV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/ic_blue_arrow" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/EPA_edit_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+android:textStyle="bold"
+        android:text="@string/interests"
+        android:textColor="@color/profile_color"
+        android:textSize="20sp"
+        app:autoSizeTextType="uniform" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/FPI_save_ACTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="13dp"
+        android:fontFamily="sans-serif"
+android:textStyle="normal"
+        android:maxLines="1"
+        android:text="@string/save_interest"
+        android:textColor="@color/bottom_nevi_blue"
+        android:textSize="16.2sp"
+        android:visibility="visible"
+        app:autoSizeTextType="uniform" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="80dp"
+        android:id="@+id/PIF_recycler_RV"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

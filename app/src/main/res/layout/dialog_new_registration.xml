@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="330dp"
+    android:layout_height="411dp"
+    android:layout_gravity="center"
+    android:background="@drawable/rounded_corner_dialog"
+    android:weightSum="411"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20">
+
+    </View>
+
+    <LinearLayout
+        android:id="@+id/LOD_close_btn"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_gravity="end"
+        android:layout_weight="34">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_close_24dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="70">
+
+    </View>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="168"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="sans-serif"
+android:textStyle="bold"
+        android:gravity="center"
+        android:maxLines="6"
+        android:text="@string/server_message"
+        android:textColor="@color/sign_in_color"
+        android:textSize="20sp"
+        app:autoSizeTextType="uniform" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="45">
+
+    </View>
+
+    <Button
+        android:id="@+id/ESD_ok_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="14dp"
+        android:layout_weight="56"
+        android:background="@drawable/blue_button_rounded"
+        android:text="@string/OK_regístrame"
+        android:textColor="@color/color_white"
+        android:textSize="15sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15">
+
+    </View>
+
+
+</LinearLayout>

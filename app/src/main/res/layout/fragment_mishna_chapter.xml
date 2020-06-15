@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jabrutouch_background"
+    android:orientation="vertical"
+    tools:context=".ui.main.mishna_screen.fragments.MishnaChapterFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="14dp"
+        android:gravity="center_horizontal">
+
+
+        <TextView
+            android:id="@+id/MCF_title_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+android:textStyle="bold"
+            android:text="@string/mishna"
+            android:textColor="@color/sign_in_color"
+            android:textSize="25sp"
+            app:autoSizeTextType="uniform" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/MCF_linea_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="vertical">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/MCF_recycler_RV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

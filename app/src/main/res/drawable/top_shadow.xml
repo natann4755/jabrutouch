@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Layer 0-->
+    <!--Layer 1-->
+    <!--Layer 2-->
+    <!--Layer 3-->
+    <!--Layer 4 (content background)-->
+
+    <!-- dropshadow -->
+<!--    <item>-->
+<!--        <shape>-->
+<!--            <solid android:color="#05ABADAF" />-->
+<!--            <padding android:top="2dp"  />-->
+<!--        </shape>-->
+<!--    </item>-->
+
+<!--    <item>-->
+<!--        <shape>-->
+<!--            <solid android:color="#04ABADAF" />-->
+<!--            <padding android:top="2dp"  />-->
+<!--        </shape>-->
+<!--    </item>-->
+
+    <item>
+        <shape>
+            <solid android:color="#03ABADAF" />
+            <padding android:top="2dp"  />
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <solid android:color="#02ABADAF" />
+            <padding android:top="2dp"  />
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <solid android:color="#01ABADAF" />
+            <padding android:top="2dp" />
+        </shape>
+    </item>
+
+
+
+    <!-- content background -->
+    <item>
+        <shape>
+            <solid android:color="@color/jabrutouch_background" />
+        </shape>
+    </item>
+</layer-list>

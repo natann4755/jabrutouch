@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="360dp"
+    android:id="@+id/FODVP_all_view"
+    android:background="@drawable/rounded_shadow"
+    tools:context=".ui.main.donation_screen.FirstDedicationViewPagerFragment">
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5">
+
+        <ImageView
+            android:id="@+id/FDVPF_left_arrow_IV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/arrow_new2" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4.4"
+        android:orientation="vertical"
+        android:weightSum="360">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="14" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="56"
+            android:fontFamily="sans-serif"
+android:textStyle="normal"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="@string/this_lesson"
+            android:textColor="@color/profile_color"
+            android:textSize="20sp"
+            app:autoSizeTextType="uniform" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="21.62" />
+
+
+        <ImageView
+            android:id="@+id/PA_user_image_CIV"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/new_profile_image" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="13.24" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="52.03">
+
+
+            <RelativeLayout
+                android:id="@+id/FODVP_linear_name_LL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/FODVP_user_nae_ACTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif"
+android:textStyle="bold"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingStart="42dp"
+                    android:paddingEnd="52dp"
+                    android:text="@string/jacobo"
+                    android:textColor="@color/sign_in_color"
+                    android:textSize="18sp" />
+
+
+                <co.il.jabrutouch.ui.main.donation_screen.CustomRelativeLayout
+                    android:layout_width="33dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/circle_for_dedication"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/FODVP_edit_edittext_IV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pen_icon" />
+
+
+                </co.il.jabrutouch.ui.main.donation_screen.CustomRelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/FODVP_linear_edit_name_RL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+
+                <EditText
+                    android:id="@+id/FODVP_edittext_name_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_edittext_top_shadow"
+                    android:hint="@string/Name_Surname"
+                    android:inputType="text"
+                    android:imeOptions="actionDone"
+                    android:paddingStart="17dp"
+                    android:paddingEnd="47dp"
+                    android:textSize="15sp" />
+
+
+                <co.il.jabrutouch.ui.main.donation_screen.CustomRelativeLayout
+                    android:id="@+id/OFDVP_v_name_RL"
+                    android:layout_width="33dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/circle_for_dedication">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/blue_v_icon" />
+
+                </co.il.jabrutouch.ui.main.donation_screen.CustomRelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9.24" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="52.44"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="3dp"
+                android:layout_gravity="center"
+                android:background="@drawable/location_new" />
+
+
+            <TextView
+                android:id="@+id/FODVP_User_location_CCP"
+                android:layout_width="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orange_btn"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:maxWidth="150dp"
+                />
+
+<!--            <com.hbb20.CountryCodePicker-->
+<!--                android:id="@+id/FODVP_User_location_CCP"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:ccpDialog_allowSearch="false"-->
+<!--                app:ccpDialog_showCloseIcon="true"-->
+<!--                android:layout_gravity="center"-->
+<!--                app:ccpDialog_showFlag="false"-->
+<!--                app:ccpDialog_textColor="@color/orange_btn"-->
+<!--                app:ccp_autoDetectCountry="true"-->
+<!--                app:ccp_clickable="false"-->
+<!--                app:ccp_contentColor="@color/orange_btn"-->
+<!--                app:ccp_showArrow="false"-->
+<!--                app:ccp_showFlag="false"-->
+<!--                app:ccp_showFullName="true"-->
+<!--                app:ccp_showNameCode="false"-->
+<!--                app:ccp_showPhoneCode="false"-->
+<!--                app:ccp_textGravity="CENTER"-->
+<!--                app:ccp_textSize="16dp" />-->
+
+
+
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/FODVP_text_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="40.03"
+            android:fontFamily="sans-serif"
+android:textStyle="normal"
+            android:textColor="@color/profile_color"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="13" />
+
+
+
+        <co.il.jabrutouch.ui.main.donation_screen.CustomEditText4
+            android:id="@+id/FODVP_edittext_ET"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/rounded_edittext_top_shadow"
+            android:hint="@string/Name_Surname2"
+            android:inputType="text"
+            android:paddingStart="17dp"
+            android:imeOptions="actionDone"
+            android:paddingEnd="17dp"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5">
+
+        <ImageView
+            android:id="@+id/FDVPF_right_arrow_IV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/arrow_new2"
+            android:rotation="180" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

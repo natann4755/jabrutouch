@@ -1,0 +1,1 @@
+include ':app', ':sqlcore', ':s3', ':mylibrary', ':model'

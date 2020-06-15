@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jcminarro.roundkornerlayout.RoundKornerLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:layout_marginBottom="2dp"
+    android:background="@drawable/rounded_shadow"
+    app:corner_radius="17dp">
+
+
+    <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+        android:id="@+id/PCDI_down_mode_RLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/rounded_linear_back_color"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:corner_radius="17dp">
+
+        <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:background="@color/rounded_linear_color"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:corner_radius="17dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/MDA_mishna_name_down_mode_TV"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="22dp"
+                    android:layout_weight="0.9"
+                    android:fontFamily="sans-serif"
+android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="2"
+                    android:textColor="@color/sign_in_color"
+                    android:textSize="28sp" />
+
+
+                <LinearLayout
+                    android:id="@+id/PCDI_duration_LL"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1.2">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_timer_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/MDA_mishna_duration_down_mode_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="2dp"
+                        android:singleLine="true"
+                        android:text="56 min" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="0.29">
+
+                <ProgressBar
+                    android:id="@+id/AS_progressbar_down_mode"
+                    style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/custom_progress_bar" />
+
+
+            </RelativeLayout>
+
+        </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:id="@+id/PCDI_download_LL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:visibility="gone">
+
+                <com.dinuscxj.progressbar.CircleProgressBar
+                    android:id="@+id/PCDI_progress_bar"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    app:progress_background_color="@color/gray_line"
+                    app:progress_end_color="@color/orange_btn"
+                    app:progress_start_color="@color/jabrutouch_blue"
+                    app:progress_stroke_width="2.4dp"
+                    app:progress_text_color="@android:color/white"
+                    app:style="solid_line" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/MDA_down_audio_LL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.1"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/MDA_mishna_audio_down_mode_IV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_audio_white_selector" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/MDA_down_video_LL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.1"
+                android:visibility="visible"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/MDA_mishna_video_down_mode_IV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/ic_video_white_selector" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/PCDI_download_video_LL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <com.dinuscxj.progressbar.CircleProgressBar
+                    android:id="@+id/PCDI_progress_bar_video"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="8dp"
+                    app:progress_background_color="@color/gray_line"
+                    app:progress_end_color="@color/orange_btn"
+                    app:progress_start_color="@color/jabrutouch_blue"
+                    app:progress_stroke_width="2.4dp"
+                    app:progress_text_color="@android:color/white"
+                    app:style="solid_line" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+
+    <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+        android:id="@+id/PCDI_not_down_mode_RLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/rounded_linear_color"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:corner_radius="17dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/MDA_mishna_name_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="22dp"
+                android:layout_weight="0.9"
+                android:fontFamily="sans-serif"
+android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:text="2"
+                android:textColor="@color/sign_in_color"
+                android:textSize="28sp" />
+
+
+
+            <LinearLayout
+                android:id="@+id/PCDI_duration_done_mode_LL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1.2"
+                android:visibility="visible">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_timer_black_24dp" />
+
+                <TextView
+                    android:id="@+id/MDA_mishna_duration_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="2dp"
+                    android:singleLine="true" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <LinearLayout
+                    android:id="@+id/PCDI_audio_icon_LL"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.1"
+                    android:layout_marginStart="10dp"
+                    android:visibility="visible"
+                    android:gravity="center">
+
+
+                    <ImageView
+                        android:id="@+id/MDA_mishna_audio_IV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/ic_audio_selector" />
+
+
+                    <com.dinuscxj.progressbar.CircleProgressBar
+                        android:id="@+id/PCDI_progress_bar_done_mode"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:layout_marginStart="5dp"
+                        app:progress_background_color="@color/gray_line"
+                        app:progress_end_color="@color/orange_btn"
+                        app:progress_start_color="@color/jabrutouch_blue"
+                        app:progress_stroke_width="2.4dp"
+                        app:progress_text_color="@android:color/black"
+                        app:style="solid_line" />
+
+
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/MDA_mishna_video_IV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:background="@drawable/ic_video_selector" />
+
+                    <com.dinuscxj.progressbar.CircleProgressBar
+                        android:id="@+id/PCDI_progress_bar_for_video_done_mode"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        app:progress_background_color="@color/gray_line"
+                        app:progress_end_color="@color/orange_btn"
+                        app:progress_start_color="@color/jabrutouch_blue"
+                        app:progress_stroke_width="2.4dp"
+                        app:progress_text_color="@android:color/black"
+                        app:style="solid_line" />
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.29">
+
+            <ProgressBar
+                android:id="@+id/AS_progressbar"
+                style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="0"
+                android:progressDrawable="@drawable/custom_progress_bar" />
+
+
+        </RelativeLayout>
+
+    </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+
+</com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>

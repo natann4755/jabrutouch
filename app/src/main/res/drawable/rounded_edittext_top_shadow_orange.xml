@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Layer 0-->
+    <!--Layer 1-->
+    <!--Layer 2-->
+    <!--Layer 3-->
+    <!--Layer 4 (content background)-->
+
+    <!-- dropshadow -->
+    <item >
+        <shape>
+            <solid android:color="@color/gray_shadow" /><corners android:radius="87px"/>
+            <padding android:top="1dp" android:right="1dp" android:bottom="3dp" android:left="1dp" />
+            <stroke
+                android:width="1dp"
+                android:color="@color/orange_btn" />
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <solid android:color="@color/gray_shadow" /><corners android:radius="87px"/>
+            <padding android:top="1.5dp" />
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <solid android:color="@color/gray_shadow" /><corners android:radius="87px"/>
+            <padding android:top="1.5dp" />
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <solid android:color="@color/gray_shadow" /><corners android:radius="87px"/>
+            <padding android:top="1.5dp" />
+        </shape>
+    </item>
+
+
+
+    <!-- content background -->
+    <item>
+        <shape><corners android:radius="87px"/>
+
+            <solid android:color="@color/rounded_linear_color" />
+
+        </shape>
+    </item>
+</layer-list>

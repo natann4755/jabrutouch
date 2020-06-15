@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jabrutouch_background"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="640"
+            tools:context=".ui.sign_in.SignInActivity"
+            tools:ignore="UselessParent">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="74" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="49.57"
+                android:fontFamily="sans-serif"
+android:textStyle="bold"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/verification"
+                android:textColor="@color/sign_in_color"
+                android:textSize="28sp"
+                app:autoSizeTextType="uniform" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="24" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="32.19dp"
+                android:layout_marginEnd="32.19dp"
+                android:layout_weight="61.88"
+                android:fontFamily="sans-serif"
+android:textStyle="normal"
+                android:gravity="center_horizontal"
+                android:maxLines="2"
+                android:text="@string/we_will_sen"
+                android:textColor="@color/sign_in_color"
+                app:autoSizeTextType="uniform" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="54" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="41dp"
+                android:layout_marginEnd="41dp"
+                android:layout_weight="60"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="9.4dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+android:textStyle="normal"
+                    android:maxLines="1"
+                    android:text="@string/country"
+                    android:textColor="@color/jabrutouch_blue"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    app:autoSizeTextType="uniform"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_edittext_bottom_shadow"
+
+                    >
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/VF_countryPicker_CCP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingLeft="10dp"
+                        app:ccpDialog_allowSearch="false"
+                        app:ccpDialog_showCloseIcon="true"
+                        app:ccpDialog_showFlag="false"
+                        app:ccpDialog_textColor="@color/sign_in_color"
+                        app:ccp_arrowSize="32dp"
+                        app:ccp_autoDetectCountry="true"
+                        app:ccp_contentColor="@color/sign_in_color"
+                        app:ccp_showFlag="false"
+                        app:ccp_showFullName="false"
+                        app:ccp_showNameCode="true"
+                        app:ccp_showPhoneCode="true"
+                        app:ccp_textGravity="LEFT"
+                        app:ccp_textSize="14dp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="34" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="41dp"
+                android:layout_marginEnd="41dp"
+                android:layout_weight="60"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="9.4dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+android:textStyle="normal"
+                    android:maxLines="1"
+                    android:text="@string/phone_number"
+                    android:textColor="@color/jabrutouch_blue"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    app:autoSizeTextType="uniform"
+
+                    />
+
+                <EditText
+                    android:id="@+id/VF_phone_ET"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/rounded_edittext_top_shadow"
+                    android:elevation="1.5dp"
+                    android:inputType="phone"
+                    android:paddingStart="20dp"
+                    android:hint="@string/phone_number"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/sign_in_color"
+                    android:textColorHint="@color/sign_in_color" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="54" />
+
+
+            <Button
+                android:id="@+id/VF_send_BTN"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="72dp"
+                android:layout_marginEnd="72dp"
+                android:layout_weight="48"
+                android:background="@drawable/button_rounded"
+                android:text="@string/send_sms"
+                android:textColor="@color/color_white" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="23" />
+
+
+            <RelativeLayout
+                android:id="@+id/VF_send_whatsapp_RL"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="72dp"
+                android:layout_marginEnd="72dp"
+                android:layout_weight="48"
+                android:visibility="gone"
+                android:background="@drawable/button_rounded_for_whatsapp">
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:text="@string/send_whatsapp"
+                    android:textColor="@color/color_white" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/ic_whatsapp_icon"/>
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="35" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

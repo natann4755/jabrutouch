@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="@color/bottom_nevi_blue"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:layout_marginStart="61dp"
+        android:layout_width="39dp"
+        android:layout_height="32dp"
+        android:background="@drawable/jabru_new_icon"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        app:autoSizeTextType="uniform"
+        android:maxLines="1"
+        android:id="@+id/imageView"
+        android:layout_marginStart="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Jabrutouch"
+        android:textColor="@color/color_white"
+        android:fontFamily="sans-serif"
+android:textStyle="bold"
+        android:textSize="28sp"
+        android:layout_marginEnd="61dp"
+         />
+
+</LinearLayout>

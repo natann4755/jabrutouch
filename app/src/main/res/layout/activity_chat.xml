@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jabrutouch_background"
+    android:orientation="vertical"
+    android:weightSum="640"
+    tools:context=".ui.main.message_screen.ChatActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="70"
+        android:background="@color/color_white"
+        android:gravity="center_vertical">
+
+
+        <ImageView
+            android:id="@+id/CA_arrow_back_IV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_blue_arrow">
+
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/CA_title_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif"
+android:textStyle="bold"
+            android:text="@string/messages"
+            android:textColor="@color/bottom_nevi_blue"
+            android:textSize="25sp">
+
+
+        </TextView>
+
+
+        <SearchView
+            android:visibility="visible"
+            android:id="@+id/CA_search_SV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="7dp"
+            android:clickable="true"
+            android:searchIcon="@drawable/ic_search"
+            android:focusable="true"
+            android:layoutDirection="rtl" />
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/MMA_search_icon_IV"-->
+<!--            android:visibility="visible"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginTop="7dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:background="@drawable/ic_search">-->
+
+<!--        </ImageView>-->
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/MMA_there_is_messages_RL"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="570">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/MA_message_recycler_RV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </ScrollView>
+
+
+        <ProgressBar
+            android:id="@+id/CA_video_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/jabrutouch_blue"
+            android:maxWidth="30dp"
+            android:maxHeight="30dp"
+            android:minWidth="30dp"
+            android:minHeight="30dp"
+            android:visibility="gone"
+
+            />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/write_message" />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/MMA_no_messages_LL"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="570"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="69"/>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/no_messages"
+            android:layout_weight="221"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="55"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="87dp"
+            app:autoSizeTextType="uniform"
+            android:maxLines="2"
+            android:layout_marginEnd="87dp"
+            android:text="@string/no_messages"
+            android:gravity="center"
+            android:textSize="21sp"
+            android:fontFamily="sans-serif"
+android:textStyle="normal"
+            android:layout_weight="74"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="158"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

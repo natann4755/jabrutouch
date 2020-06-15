@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "317005163328",
+    "firebase_url": "https://jabrutouch-d3470.firebaseio.com",
+    "project_id": "jabrutouch-d3470",
+    "storage_bucket": "jabrutouch-d3470.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317005163328:android:25e7b8aaf4b13e2e10e8a5",
+        "android_client_info": {
+          "package_name": "co.il.jabrutouch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "317005163328-mkrf0hv5jnokembc2k0iqtqe9hbacvr9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhFui_IQKDx2nczdr-9YftT2AIN6EwHRw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "317005163328-mkrf0hv5jnokembc2k0iqtqe9hbacvr9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

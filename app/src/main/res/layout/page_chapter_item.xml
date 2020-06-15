@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jcminarro.roundkornerlayout.RoundKornerLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:layout_marginBottom="2dp"
+    android:background="@drawable/rounded_shadow"
+    android:orientation="vertical"
+    app:corner_radius="17dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="14dp"
+                android:fontFamily="sans-serif"
+android:textStyle="normal"
+                android:gravity="center_vertical"
+                android:text="@string/chapter"
+                android:textColor="@color/sign_in_color"
+                android:textSize="19sp" />
+
+
+            <TextView
+                android:id="@+id/PMI_masechet_name_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="6dp"
+                android:fontFamily="sans-serif"
+android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:textColor="@color/sign_in_color"
+                android:textSize="19sp" />
+
+
+
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/PMI_chapter_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="14dp"
+            android:textColor="@color/bottom_nevi_blue"
+            android:layout_marginEnd="5dp"
+            android:text="9 Mishnaiot"
+
+            />
+
+
+        <ImageView
+            android:id="@+id/PMI_arrow_IV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/arrow_right_black_24dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+</com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jabrutouch_background"
+    android:orientation="vertical"
+    tools:context=".ui.main.about_screen.AboutActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/about_top"
+        >
+
+
+        <ImageView
+            android:id="@+id/AA_back_arrow_IV"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/ic_blue_arrow"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="60dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="39dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="61dp"
+                android:background="@drawable/jabru_icon_blue" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="61dp"
+                android:fontFamily="sans-serif"
+android:textStyle="bold"
+                android:maxLines="1"
+                android:text="@string/Jabrutouch"
+                android:textColor="@color/bottom_nevi_blue"
+                android:textSize="28sp"
+                app:autoSizeTextType="uniform" />
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/AA_text_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+android:textStyle="normal"
+            android:scrollbars="vertical"
+            android:text="@string/about_pdf"
+            android:textSize="15sp" />
+
+
+    </ScrollView>
+
+</LinearLayout>

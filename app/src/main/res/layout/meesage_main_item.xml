@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    android:layout_marginStart="17dp"
+    android:layout_marginEnd="17dp"
+    android:background="@color/jabrutouch_background"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:background="@drawable/team_icon_new">
+
+        </ImageView>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/MMI_message_main_title_TV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+android:textStyle="bold"
+                    android:textColor="@color/bottom_nevi_blue"
+                    android:textSize="15sp"
+                    tools:text="@string/jabru_team">
+
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/MMI_last_message_time_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+android:textStyle="normal"
+                    android:textColor="@color/profile_color"
+                    android:textSize="13sp"
+                    tools:text="00:12">
+
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/MMI_last_message_TV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:ellipsize="end"
+                    android:layout_marginEnd="11dp"
+                    android:fontFamily="sans-serif"
+android:textStyle="normal"
+                    android:maxLines="2"
+                    android:textColor="@color/profile_color"
+                    tools:text="Hi David, this is your full answer that you get because of the ">
+
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/ic_arrow_gray">
+
+                </ImageView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/profile_color" />
+
+
+</LinearLayout>

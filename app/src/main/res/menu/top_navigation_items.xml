@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/TNI_profile"
+        android:title="@string/profile"/>
+
+
+    <item android:id="@+id/TNI_about"
+        android:title="@string/about"/>
+
+
+    <item android:id="@+id/TNI_message_center"
+        android:title="@string/message_center"/>
+
+
+    <item android:id="@+id/TNI_mishna"
+        android:title="@string/mishna"/>
+
+
+    <item android:id="@+id/TNI_gemara"
+        android:title="@string/gemara"/>
+
+
+    <item android:id="@+id/TNI_donation_center"
+        android:title="@string/donation_center"/>
+
+
+    <item
+        android:id="@+id/TNI_donate"
+        android:title="@string/donate"/>
+
+
+    <item
+        android:id="@+id/TNI_log_out"
+        android:title="@string/log_out"/>
+
+</menu>

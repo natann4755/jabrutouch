@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/video_background"
+    tools:targetApi="28">
+
+
+    <ImageView
+        android:id="@+id/exo_down_arrow_IV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_arrow_down"
+        android:layout_alignParentEnd="true"/>
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/exo_speed_IV"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/color_white"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_exo_speed_x1" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:id="@+id/exo_video_back"
+            android:layout_marginEnd="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_arrow_selector"
+             />
+
+        <ImageButton
+            android:id="@id/exo_rew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/ic_video_10_back_selector"
+            android:tint="@color/colorPrimaryDark"
+            android:tintMode="src_in" />
+
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="50dp">
+
+            <ImageButton
+                android:id="@id/exo_play"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_video_play_selector"
+                android:tint="@color/colorPrimaryDark"
+                android:tintMode="src_in" />
+
+            <ImageButton
+                android:id="@id/exo_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/exo_controls_pause_selector"
+                android:tint="@color/colorPrimaryDark"
+                android:tintMode="src_in" />
+
+        </RelativeLayout>
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@id/exo_ffwd"
+            android:background="@drawable/ic_video_10_frw_selector"
+            android:tint="@color/colorPrimaryDark"
+            android:tintMode="src_in" />
+
+        <ImageButton
+            android:id="@+id/exo_video_frd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/arrow_frroword_selector"
+             />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="11dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:maxLines="1"
+            android:id="@id/exo_position"
+            android:layout_width="0dp"
+            android:layout_weight="1.4"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:layout_marginStart="10dp"
+            android:textSize="12sp"
+            />
+
+        <LinearLayout
+            android:id="@+id/VA_view_for_seekbar_V"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="9"
+            android:layout_marginEnd="7dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+<!--        <com.google.android.exoplayer2.ui.DefaultTimeBar-->
+<!--            android:id="@id/exo_progress"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_weight="8"-->
+<!--            app:played_color="@color/jabrutouch_blue"-->
+<!--            app:unplayed_color="@color/grayIndicator"-->
+<!--            app:scrubber_color="@color/color_white"-->
+<!--            android:layout_marginEnd="7dp"-->
+<!--            android:layout_height="20dp"/>-->
+
+
+        <TextView
+            android:maxLines="1"
+            android:id="@id/exo_duration"
+            android:layout_width="0dp"
+            android:layout_weight="1.6"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="12sp"
+             />
+
+        <FrameLayout
+            android:id="@+id/exo_fullscreen_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            >
+
+        <ImageView
+            android:id="@+id/exo_fullscreen_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            app:srcCompat="@drawable/ic_video_full" />
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

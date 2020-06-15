@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jabrutouch_background"
+    android:orientation="vertical"
+    tools:context=".ui.main.downloads_screen.fragments.DownloadsFragment">
+
+    <LinearLayout
+        android:background="@color/rounded_linear_color"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="14dp"
+            android:background="@color/rounded_linear_color"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="sans-serif"
+android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:text="@string/downloads"
+                android:textColor="@color/sign_in_color"
+                android:textSize="25sp"
+                app:autoSizeTextType="uniform" />
+
+
+            <TextView
+                android:id="@+id/DF_delete_btn_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+android:textStyle="normal"
+                android:textSize="18sp"
+                android:layout_marginEnd="20dp"
+                android:visibility="visible"
+                android:textColor="@color/bottom_nevi_blue"
+                android:text="@string/delete"/>
+
+
+        </RelativeLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/DF_tabLayout_TL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:background="@color/rounded_linear_color"
+                app:tabIndicatorColor="@color/jabrutouch_blue"
+                app:tabMinWidth="140dp"
+                app:tabMaxWidth="0dp"
+                app:tabMode="fixed"
+                app:tabGravity="fill"
+                app:tabTextColor="@color/grayIndicator"
+                app:tabSelectedTextColor="@color/tab_color">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/gemara" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/mishna" />
+
+            </com.google.android.material.tabs.TabLayout>
+
+
+    </LinearLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/DF_viewpager_VP"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/top_shadow"
+         />
+
+
+</LinearLayout>

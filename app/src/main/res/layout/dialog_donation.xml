@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="333dp"
+    android:layout_height="466dp"
+    android:layout_gravity="center"
+    android:background="@drawable/rounded_corner_dialog"
+    android:orientation="vertical"
+    android:weightSum="466">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="64.3" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="57.58"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="@string/this_lesson"
+        android:textColor="@color/sign_in_color"
+        android:textSize="21sp"
+        android:textStyle="normal"
+        app:autoSizeTextType="uniform" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="48.4" />
+
+
+    <ImageView
+        android:id="@+id/PA_user_image_CIV"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_profile_image" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/DD_name"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="38.69"
+        android:fontFamily="sans-serif"
+        android:maxLines="1"
+        android:textColor="@color/sign_in_color"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        tools:text="@string/jacobo" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="28"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/dd_location_IV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/location_new" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/DD_Donation_location_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:maxLines="1"
+            android:textColor="@color/orange_btn"
+            android:textSize="21sp"
+            android:textStyle="normal"
+            app:autoSizeTextType="uniform"
+            tools:text="@string/mexico" />
+
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/DD_memorial_name_ACTV"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="57.58"
+        android:fontFamily="sans-serif"
+        android:maxLines="1"
+        android:text="@string/In_memoria"
+        android:textColor="@color/sign_in_color"
+        android:textSize="21sp"
+        android:textStyle="normal"
+        app:autoSizeTextType="uniform" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="65" />
+
+
+    <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+        android:id="@+id/DD_appreciate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="14dp"
+        android:layout_weight="58"
+        android:background="@color/bottom_nevi_blue"
+        android:orientation="horizontal"
+        app:corner_radius="15dp">
+
+
+        <ImageView
+            android:id="@+id/DD_heart_image_IV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/ic_heart_new" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="5"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@string/Appreciate"
+            android:textColor="@color/color_white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+    </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11" />
+
+
+</LinearLayout>

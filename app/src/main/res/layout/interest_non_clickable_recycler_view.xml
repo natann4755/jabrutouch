@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="110dp"
+    android:layout_marginStart="10dp"
+    android:id="@+id/IRV_rounded_LL"
+    android:layout_marginTop="5dp"
+    android:gravity="center"
+    android:layout_height="53dp">
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/RV_title"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="@drawable/rounded_shadow"
+        android:textColor="@color/profile_color"
+        android:fontFamily="sans-serif"
+android:textStyle="normal"
+        tools:text="asdasdasdasda"
+        android:maxLines="1"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

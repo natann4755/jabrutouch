@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <item android:id="@+id/action_main"
+        android:title="@string/main"
+        android:enabled="true"
+        android:icon="@drawable/ic_new_jabru_icon_for_navi"
+         />
+
+
+    <item android:id="@+id/action_downloads"
+        android:title="@string/downloads"
+        android:icon="@drawable/download_new"
+        />
+
+    <item android:id="@+id/action_gemara"
+        android:title="@string/gemara"
+        android:icon="@drawable/ic_navi_gemara_selected" />
+
+    <item android:id="@+id/action_mishna"
+        android:title="@string/mishna"
+        android:icon="@drawable/ic_navimishna_selected" />
+
+    <item
+        android:id="@+id/action_donations"
+        android:icon="@drawable/ic_navi_donation_selected"
+        android:title="@string/donations" />
+</menu>

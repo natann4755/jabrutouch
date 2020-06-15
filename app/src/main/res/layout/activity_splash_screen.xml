@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    tools:context=".SplashActivity">
+
+
+    <LinearLayout
+        android:id="@+id/SA_center_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/jabru_new_icon" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+android:textStyle="bold"
+            android:text="@string/Jabrutouch"
+            android:textColor="@color/color_white"
+            android:textSize="38sp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SA_center_icon"
+        android:fontFamily="sans-serif"
+android:textStyle="bold"
+        android:text="@string/version_beta"
+        android:textColor="@color/color_white"
+        android:textSize="17sp" />
+
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginTop="80dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:fontFamily="sans-serif"
+android:textStyle="bold"-->
+<!--        android:text="@string/otra"-->
+<!--        android:textColor="@color/color_white"-->
+<!--        android:textSize="18sp"-->
+<!--        android:visibility="gone" />-->
+
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="2"-->
+<!--        android:fontFamily="sans-serif"
+android:textStyle="bold"-->
+<!--        android:text="@string/tashema"-->
+<!--        android:textColor="@color/color_white"-->
+<!--        android:textSize="35sp"-->
+<!--        android:visibility="gone"-->
+
+<!--        />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:padding="20dp">
+
+        <ProgressBar
+            android:id="@+id/SSA_progressbar_PB"
+            style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+            android:layout_width="250dp"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:max="1000"
+            android:progressBackgroundTint="@color/gray_line"
+            android:progressTint="@color/jabrutouch_background" />
+        <!--android:indeterminate="true"-->
+        <!--android:indeterminateTint="@color/gray_line"-->
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="600"
+    android:orientation="vertical"
+    android:background="@color/jabrutouch_background"
+    tools:context=".ui.main.donation_screen.PaymentFragment">
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40.7"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="57">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif"
+android:textStyle="normal"
+            android:text="@string/select_payment"/>
+
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="19.35"/>
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/PF_credit_card_btn_RL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="38"
+        android:layout_marginEnd="51dp"
+        android:layout_marginStart="51dp"
+        android:background="@drawable/white_button">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/credit_card_icon"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:layout_marginStart="17dp"/>
+
+
+        <Button
+            android:id="@+id/PF_credit_card_btn_BTN"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:text="@string/credit_card"
+            android:clickable="false"
+            android:fontFamily="sans-serif"
+android:textStyle="bold"
+            android:textColor="@color/color_blue_gray"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12" />
+
+
+    <RelativeLayout
+        android:id="@+id/PF_paypal_btn_RL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="51dp"
+        android:layout_weight="38"
+        android:background="@drawable/white_button">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="17dp"
+            android:clickable="false"
+            android:background="@drawable/paypel_icon" />
+
+
+        <Button
+            android:id="@+id/PF_paypal_btn_BTN"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif"
+android:textStyle="bold"
+            android:text="@string/pay_pal"
+            android:clickable="false"
+            android:textColor="@color/color_blue_gray"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/PF_google_pay_btn_RL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="38"
+        android:layout_marginEnd="51dp"
+        android:layout_marginStart="51dp"
+        android:background="@drawable/blue_button">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/google_icon"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:layout_marginStart="17dp"/>
+
+
+        <Button
+            android:id="@+id/PF_google_pay_btn_BTN"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:text="@string/google_pay"
+            android:clickable="false"
+            android:fontFamily="sans-serif"
+android:textStyle="bold"
+            android:textColor="@color/color_white"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="260" />
+
+
+    <Button
+        android:id="@+id/PF_continue_to_payment_btn_BTN"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="56"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="29dp"
+        android:text="@string/continu_to_payment"
+        android:layout_marginStart="29dp"
+        android:background="@drawable/blue_button"
+        android:fontFamily="sans-serif"
+android:textStyle="bold"
+        android:textColor="@color/color_white"
+        android:textSize="19sp" />
+
+
+</LinearLayout>

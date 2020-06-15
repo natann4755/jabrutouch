@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Layer 0-->
+    <!--Layer 1-->
+    <!--Layer 2-->
+    <!--Layer 3-->
+    <!--Layer 4 (content background)-->
+
+    <!-- dropshadow -->
+
+
+    <!-- content background -->
+    <item>
+        <shape><corners android:radius="17dp"/>
+            <gradient
+                android:startColor="#80413FC6"
+                android:endColor="#801B1977"
+                android:angle="270"/>
+        </shape>
+    </item>
+</layer-list>

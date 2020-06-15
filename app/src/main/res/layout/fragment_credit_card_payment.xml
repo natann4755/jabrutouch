@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="600"
+    android:background="@color/jabrutouch_background"
+    tools:context=".ui.main.donation_screen.CreditCardPaymentFragment">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="59.81" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="22.99dp"
+        android:layout_marginEnd="13.57dp"
+        android:layout_weight="53.67">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:fontFamily="sans-serif"
+android:textStyle="normal"
+            android:text="@string/you_pay"
+            android:textColor="@color/bottom_nevi_blue"
+            android:textSize="21sp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dolar_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="-15dp"
+                    android:fontFamily="sans-serif"
+android:textStyle="normal"
+                    android:text="36"
+                    android:textColor="@color/bottom_nevi_blue"
+                    android:textSize="44sp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:fontFamily="sans-serif"
+android:textStyle="normal"
+                android:text="@string/per"
+                android:textColor="@color/bottom_nevi_blue"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="22" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_weight="231.75"
+        android:background="@drawable/rounded_shadow_credit">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="29dp"
+            android:layout_marginEnd="17dp"
+            android:orientation="vertical"
+            android:weightSum="221.75">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8.13" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="35.56">
+
+                <ImageView
+                    android:id="@+id/FCCD_credit_compeny_IV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/visa_icon" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="28.2"
+                android:fontFamily="sans-serif"
+android:textStyle="bold"
+                android:text="Person Namename"
+                android:textColor="@color/color_white"
+                android:textSize="21sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30.77" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="28.2"
+                android:fontFamily="sans-serif"
+android:textStyle="bold"
+                android:text="**** **** **** 1234"
+                android:textColor="@color/color_white"
+                android:textSize="21sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="21.19" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="28.2"
+                android:fontFamily="sans-serif"
+android:textStyle="bold"
+                android:text="20/12"
+                android:textColor="@color/color_white"
+                android:textSize="21sp" />
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/MUAI_relative_for_progress_RL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@drawable/credit_shadow"
+
+            />
+
+        <ProgressBar
+            android:id="@+id/MUAI_progress_bar_PB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/color_white"
+            android:maxWidth="150dp"
+            android:maxHeight="150dp"
+            android:minWidth="150dp"
+            android:minHeight="150dp"
+            android:visibility="gone"
+
+            />
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18.4" />
+
+
+    <TextView
+        android:id="@+id/CCPF_replace_card_TV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_weight="43"
+        android:background="@drawable/rounded_for_sign"
+        android:fontFamily="sans-serif"
+android:textStyle="normal"
+        android:gravity="center"
+        android:text="@string/replace"
+        android:textColor="@color/bottom_nevi_blue"
+        android:textSize="16sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="93.68" />
+
+
+    <Button
+        android:id="@+id/CCPF_send_payment_btn_BTN"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_weight="56"
+        android:background="@drawable/blue_button_rounded"
+        android:fontFamily="sans-serif"
+android:textStyle="bold"
+        android:text="@string/send_payment"
+        android:textColor="@color/color_white"
+        android:textSize="19sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14.96" />
+
+
+</LinearLayout>

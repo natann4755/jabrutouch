@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="9dp"
+    android:background="@color/audio_bachground"
+    android:elevation="3dp"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="80dp">
+
+
+        <ImageView
+            android:id="@+id/NA_btn_play_IV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_play22" />
+
+
+        <TextView
+            android:id="@+id/NA_btn_name_TV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="2.6"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textSize="20sp" />
+
+
+        <ImageView
+            android:layout_marginEnd="20dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_weight="0.3"
+            android:src="@drawable/ic_jabru_icon" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

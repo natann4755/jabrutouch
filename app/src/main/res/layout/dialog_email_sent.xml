@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="411dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:weightSum="411"
+    android:background="@drawable/rounded_corner_dialog">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"/>
+
+    <LinearLayout
+        android:id="@+id/LOD_close_btn"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_weight="35"
+        android:layout_gravity="end"
+        >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_close_24dp" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        app:autoSizeTextType="uniform"
+        android:maxLines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="45"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif"
+android:textStyle="bold"
+        android:text="@string/email_sent"
+        android:textColor="@color/sign_in_color"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="105"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="sans-serif"
+android:textStyle="normal"
+        android:maxLines="2"
+        android:gravity="center"
+        android:text="@string/we_sent"
+        android:textColor="@color/sign_in_color"
+        android:textSize="20sp"
+        app:autoSizeTextType="uniform" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ESD_email_text_ACTV"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="30"
+        android:fontFamily="sans-serif"
+android:textStyle="normal"
+        android:gravity="center"
+        android:maxLines="1"
+        tools:text="em******ss@address.com"
+        android:textColor="@color/orange_btn"
+        android:textSize="20sp"
+        app:autoSizeTextType="uniform" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"/>
+
+
+
+    <Button
+        android:id="@+id/ESD_ok_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_weight="56"
+        android:background="@drawable/blue_button_rounded"
+        android:text="@string/ok"
+        android:textSize="15sp"
+        android:textColor="@color/color_white"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"/>
+
+
+
+</LinearLayout>

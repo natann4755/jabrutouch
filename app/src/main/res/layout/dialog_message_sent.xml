@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="76dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/toast_layout_root"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/rounded_corner_dialog_message_sent">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/NMD_text"
+        android:layout_centerInParent="true"
+        app:autoSizeTextType="uniform"
+        android:maxLines="1"
+        android:layout_width="wrap_content"
+        android:padding="20dp"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_marginStart="25sp"
+        android:layout_marginEnd="25sp"
+        android:fontFamily="sans-serif"
+android:textStyle="bold"
+        android:text="@string/message_sent"
+        android:textColor="@color/color_white"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        />
+
+
+
+
+
+</RelativeLayout>

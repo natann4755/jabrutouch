@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/rounded_corner_dialog">
+
+    <LinearLayout
+        android:id="@+id/LOD_close_btn"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="end"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_close_24dp" />
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        app:autoSizeTextType="uniform"
+        android:maxLines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="25sp"
+        android:layout_marginBottom="126dp"
+        android:fontFamily="sans-serif"
+android:textStyle="bold"
+        android:text="@string/are_you_sure"
+        android:textColor="@color/sign_in_color"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+    <Button
+        android:id="@+id/LOD_log_out_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_weight="1"
+        android:background="@drawable/blue_button_rounded"
+        android:text="@string/log_out"
+        android:textSize="15sp"
+        android:textColor="@color/color_white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="14dp"
+        />
+
+
+    <Button
+        android:id="@+id/LOD_cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_rounded_radius_14"
+        android:text="@string/cancel"
+        android:textSize="15sp"
+        android:textColor="@color/color_white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="18dp"
+        />
+
+
+
+
+
+
+</LinearLayout>

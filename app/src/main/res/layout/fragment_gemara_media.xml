@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/jabrutouch_background"
+    >
+
+    <RelativeLayout
+        android:id="@+id/GMF_top_bar_LL"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:id="@+id/GDF_title_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:text="Pesachim A"
+            android:textColor="@color/sign_in_color"
+            android:textSize="25sp"
+            app:autoSizeTextType="uniform" />
+
+
+
+
+        <ImageView
+            android:visibility="visible"
+            android:id="@+id/GDF_download_IV"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_download" />
+
+
+        <TextView
+            android:id="@+id/GDF_done_TV"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sign_in_color"
+            android:textSize="20sp"
+            android:text="@string/done"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/GDF_swipe_container_LL"
+        android:layout_below="@+id/GMF_top_bar_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="vertical">
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/GMF_recycler_RV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <com.dinuscxj.progressbar.CircleProgressBar
+        android:id="@+id/VCF_progress_bar_PB"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:style="solid"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        app:progress_background_color="@color/grayIndicator"
+        app:progress_start_color="@color/jabrutouch_blue"
+        app:progress_end_color="@color/orange_btn"
+        app:progress_text_color="@android:color/black"
+        android:visibility="gone"/>
+
+
+    <!--<ProgressBar-->
+        <!--android:id="@+id/VCF_progress_bar_PB"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:indeterminate="true"-->
+        <!--android:indeterminateTint="@color/jabrutouch_blue"-->
+        <!--android:maxHeight="50dp"-->
+        <!--android:minHeight="50dp"-->
+        <!--android:minWidth="50dp"-->
+        <!--android:maxWidth="50dp"-->
+        <!--android:visibility="gone"-->
+
+        <!--/>-->
+
+
+</RelativeLayout>
